@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { FormWrapper } from './Style';
 
 interface IForm {
   user_name: string;
@@ -12,6 +13,8 @@ function Contact() {
     register,
     formState: { isValid, errors },
     handleSubmit,
+    clearErrors,
+    reset,
   } = useForm<IForm>({ mode: 'onChange' });
 
   // emailJs에서 호환되는 formElement를 동적으로 생성해주는 이벤트
@@ -40,18 +43,44 @@ function Contact() {
   };
 
   return (
-    <form onSubmit={handleSubmit(sendEmail)}>
-      <label>이름</label>
-      <input {...register('user_name', { required: true })} className={errors.user_name ? 'error' : ''} />
-      {errors.user_name ? '이름은 필수 값입니다. 입력해주세요.' : ''}
-      <label>답변을 받을 이메일</label>
-      <input {...register('user_email', { required: true })} />
-      {errors.user_email ? '메일은 필수 값입니다. 입력해주세요.' : ''}
-      <label>메세지</label>
-      <textarea {...register('message', { required: true })} />
-      {errors.message ? '메세지는 필수 값입니다. 입력해주세요.' : ''}
-      <input type="submit" />
-    </form>
+    <FormWrapper onSubmit={handleSubmit(sendEmail)}>
+      <div className="form-row">
+        <div>
+          <label>이름</label>
+          <input
+            {...register('user_name', { required: true, onChange: () => clearErrors('user_name') })}
+            className={errors.user_name ? 'error' : ''}
+          />
+        </div>
+        {errors.user_name ? <p>이름은 필수 값입니다. 입력해주세요.</p> : null}
+      </div>
+      <div className="form-row">
+        <div>
+          <label>답변을 받을 이메일</label>
+          <input
+            {...register('user_email', { required: true, onChange: () => clearErrors('user_email') })}
+            className={errors.user_email ? 'error' : ''}
+          />
+        </div>
+        {errors.user_email ? <p>메일은 필수 값입니다. 입력해주세요.</p> : null}
+      </div>
+      <div className="form-row">
+        <div>
+          <label>메세지</label>
+          <textarea
+            {...register('message', { required: true, onChange: () => clearErrors('message') })}
+            className={errors.message ? 'error' : ''}
+          />
+        </div>
+        {errors.message ? <p>메세지는 필수 값입니다. 입력해주세요.</p> : null}
+      </div>
+      <div className="form-row button-group">
+        <button type="button" onClick={() => reset()}>
+          초기화
+        </button>
+        <button type="submit">메일 보내기</button>
+      </div>
+    </FormWrapper>
   );
 }
 

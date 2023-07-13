@@ -1,4 +1,4 @@
-import Contact from './Main/Contact';
+import Contact from './Contact';
 
 function Main() {
   return (
