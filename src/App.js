@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import GlobalStyle from './SCSS/common';
+import ResetStyle from './SCSS/reset';
+import CommonStyle from './SCSS/common';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import About from './Routes/About';
@@ -10,7 +11,8 @@ import Work from './Routes/Work';
 function App() {
   return (
     <>
-      <GlobalStyle />
+      <ResetStyle />
+      <CommonStyle />
       <Router>
         <Header />
         <Routes>

@@ -1,10 +1,15 @@
-import Contact from './Contact';
+import MainAbout from './MainAbout';
+import MainBanner from './MainBanner';
+import MainContact from './MainContact';
+import MainWork from './MainWork';
 
 function Main() {
   return (
     <>
-      <h1>Main</h1>
-      <Contact />
+      <MainBanner />
+      <MainAbout />
+      <MainWork />
+      <MainContact />
     </>
   );
 }

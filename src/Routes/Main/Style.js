@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
+const MainContactWrapper = styled.section`
+  border-top: 1px solid #ddd;
+  height: 100vh;
+  padding: 30px;
+`;
+
 const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 30px;
 
   .form-row {
     padding-bottom: 20px;
@@ -85,4 +90,4 @@ const FormWrapper = styled.form`
   }
 `;
 
-export { FormWrapper };
+export { MainContactWrapper, FormWrapper };
