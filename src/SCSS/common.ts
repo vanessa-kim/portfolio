@@ -1,18 +1,23 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const CommonStyle = createGlobalStyle`
-  h2.main-text {
+  h2 {
     font-size: 18px;
     font-weight: 600;
     color: #aaa;
   }
 
-  h3.main-text {
+  h3 {
     font-size: 30px;
-    font-weight :700;
+    font-weight: 700;
   }
 
-  p.title-description {
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p {
     font-size: 14px;
     line-height: 20px;
     margin-top: 10px;
