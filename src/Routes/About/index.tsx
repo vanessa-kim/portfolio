@@ -9,6 +9,10 @@ const SkillList = styled.ul`
 	}
 `;
 
+const ExperienceList = styled.ul``;
+
+const EducationList = styled.ul``;
+
 function About() {
 	return (
 		<>
@@ -62,6 +66,46 @@ function About() {
 				<li>Photoshop</li>
 				<li>Illustration</li>
 			</SkillList>
+
+			<h3>Experience</h3>
+			<ExperienceList>
+				<li>
+					<i>서비스 포탈</i>
+					<b>NexR Data Cloud</b>
+					<span>프론트엔드 개발</span>
+					<span>2023.1 - 진행중</span>
+					<p>
+						NexR Data Cloud(NDC)는 사용자가 클라우드 환경에서 데이터를 활용할 수
+						있도록 편의성을 제공하는 통합 데이터 서비스입니다. 데이터의 수집,
+						저장, 처리, 조회, 분석, 학습, 전달, 시각화 등 전 영역에 대한 모듈과
+						통합된 인증(SS), 모듈별 권한 관리를 제공합니다.
+					</p>
+				</li>
+				<li>...</li>
+				<li>
+					<i>하이브리드 모바일 애플리케이션</i>
+					<b>안전보건 앱</b>
+					<span>디자인, 퍼블리싱</span>
+					<span>2016.8-11</span>
+					<p>
+						사업장 안전관리를 위해 다양한 산업안전 보건자료를 쉽고 편리하게
+						이용할 수 있는 하이브리드앱 입니다.
+					</p>
+				</li>
+			</ExperienceList>
+
+			<h3>Education</h3>
+			<EducationList>
+				<li>
+					TIS정보기술교육센터 HTML5와 JavaScript를 활용한 웹프론트엔드 개발 실무
+					과정
+				</li>
+				<li>
+					패스트캠퍼스 JavaScript 부트 캠프 9기 JavaScript ES6 문법과 프로그래밍
+				</li>
+				<li>이화여자대학교 시각디자인 학부 졸업</li>
+				<li>덕원예술고등학교 미술과 졸업</li>
+			</EducationList>
 		</>
 	);
 }
