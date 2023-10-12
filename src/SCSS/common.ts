@@ -6,7 +6,7 @@ const CommonStyle = createGlobalStyle`
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
-    color: #ccc;
+    color: #cacaca;
     letter-spacing: 2px;
   }
 
@@ -24,10 +24,11 @@ const CommonStyle = createGlobalStyle`
   }
 
   p {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+    color: #555;
 
     a {
       color: blue;

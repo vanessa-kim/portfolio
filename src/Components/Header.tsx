@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import { useEffect, useState } from "react";
 
 const HeaderWrapper = styled.header`
 	position: fixed;
@@ -37,12 +38,16 @@ const HeaderWrapper = styled.header`
 		display: flex;
 
 		li {
+			&.active a {
+				font-weight: 500;
+			}
 			a {
 				font-family: "Kumbh Sans", sans-serif;
 				font-weight: 300;
 				display: block;
 				padding: 20px 30px;
 				cursor: pointer;
+				color: #555;
 
 				&:hover {
 					font-weight: 500;
@@ -73,7 +78,20 @@ const HeaderWrapper = styled.header`
 	}
 `;
 
+const MENUS = [
+	{ path: "/about", name: "ABOUT" },
+	{ path: "/work", name: "WORK" },
+	{ path: "/contact", name: "CONTACT" },
+];
+
 function Header() {
+	const [path, setPath] = useState("/");
+	const location = useLocation();
+
+	useEffect(() => {
+		setPath(location?.pathname);
+	}, [location]);
+
 	return (
 		<HeaderWrapper>
 			<div className="header-group">
@@ -81,15 +99,11 @@ function Header() {
 					<Link to="/">VANESSA STUDIO</Link>
 				</h1>
 				<ul>
-					<li>
-						<Link to="/about">ABOUT</Link>
-					</li>
-					<li>
-						<Link to="/work">WORK</Link>
-					</li>
-					<li>
-						<Link to="/contact">CONTACT</Link>
-					</li>
+					{MENUS.map((menu) => (
+						<li key={menu.name} className={path === menu.path ? "active" : ""}>
+							<Link to={menu.path}>{menu.name}</Link>
+						</li>
+					))}
 				</ul>
 			</div>
 
