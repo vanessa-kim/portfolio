@@ -1,21 +1,33 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
 const HeaderWrapper = styled.header`
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
+	height: 60px;
+	align-items: center;
 	border-bottom: 1px solid #ddd;
 	padding: 0 30px;
 	justify-content: space-between;
+	backdrop-filter: blur(10px);
+	background: #ffffff77;
+
 	.header-group {
 		display: flex;
 		font-size: 12px;
 
 		h1 {
 			display: block;
-			padding: 20px 30px;
+			padding: 20px 10px 20px 0;
 			cursor: pointer;
+			font-weight: 700;
+
 			&:hover {
-				font-weight: 500;
+				color: #999;
 			}
 		}
 	}
@@ -35,7 +47,22 @@ const HeaderWrapper = styled.header`
 			}
 
 			button {
-				margin: 15px 10px;
+				margin: 15px;
+			}
+		}
+	}
+
+	.header-function-group {
+		display: flex;
+		align-items: center;
+
+		button {
+			border: none;
+			padding: 0;
+			background-color: transparent;
+
+			svg {
+				font-size: 20px;
 			}
 		}
 	}
@@ -46,7 +73,7 @@ function Header() {
 		<HeaderWrapper>
 			<div className="header-group">
 				<h1>
-					<Link to="/">LOGO</Link>
+					<Link to="/">VANESSA STUDIO</Link>
 				</h1>
 				<ul>
 					<li>
@@ -61,15 +88,14 @@ function Header() {
 				</ul>
 			</div>
 
-			<ul>
+			<ul className="header-function-group">
 				<li>
-					<button>KO/EN</button>
+					<button>EN</button>
 				</li>
 				<li>
-					<button>on/off</button>
-				</li>
-				<li>
-					<button>toggle</button>
+					<button>
+						<DarkModeOutlinedIcon />
+					</button>
 				</li>
 			</ul>
 		</HeaderWrapper>

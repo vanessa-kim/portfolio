@@ -6,8 +6,10 @@ import MainWork from "./MainWork";
 
 const MainGrid = styled.section`
 	display: grid;
-	grid-template-columns: 50vw 50vw;
+	grid-template-columns: calc(40vw - 45px) calc(60vw - 45px);
 	grid-auto-rows: minmax(100px, auto);
+	gap: 15px;
+	padding: 0 30px 30px;
 
 	section:nth-child(3) {
 		grid-column: 2/3;

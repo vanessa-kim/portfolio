@@ -1,8 +1,17 @@
 import styled from "styled-components";
+import CallMadeIcon from "@mui/icons-material/CallMade";
 
 const MainContactWrapper = styled.section`
-	border-top: 1px solid #ddd;
+	position: relative;
 	padding: 30px;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+
+	.ico-btn {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
 `;
 
 function MainContact() {
@@ -18,6 +27,10 @@ function MainContact() {
 				<a href="mailto:yeran1225@gmail.com">yeran1225@gmail.com</a>으로
 				보내주세요.
 			</p>
+
+			<button className="ico-btn">
+				<CallMadeIcon />
+			</button>
 		</MainContactWrapper>
 	);
 }

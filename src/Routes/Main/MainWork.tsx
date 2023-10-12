@@ -1,8 +1,25 @@
 import styled from "styled-components";
+import CallMadeIcon from "@mui/icons-material/CallMade";
 
 const MainWorkWrapper = styled.section`
-	border-top: 1px solid #ddd;
+	position: relative;
 	padding: 30px;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+
+	.ico-btn {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+
+	.main-work-pic {
+		height: calc(100% - 130px);
+		background-color: #ddd;
+		border-radius: 10px;
+		font-size: 0;
+		margin-top: 30px;
+	}
 `;
 
 function MainWork() {
@@ -14,7 +31,10 @@ function MainWork() {
 				2015부터 지금까지 지속된 작업물을 살펴보세요! 더 많은 작업물을 보고
 				싶다면 !
 			</p>
-			<button>더보기 {`>`}</button>
+			<div className="main-work-pic">photo</div>
+			<button className="ico-btn">
+				<CallMadeIcon />
+			</button>
 		</MainWorkWrapper>
 	);
 }
