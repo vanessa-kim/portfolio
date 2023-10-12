@@ -16,6 +16,7 @@ const HeaderWrapper = styled.header`
 	justify-content: space-between;
 	backdrop-filter: blur(10px);
 	background: var(--header-bg);
+	z-index: var(--z-index-header);
 
 	.header-group {
 		display: flex;

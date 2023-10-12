@@ -1,22 +1,9 @@
-import styled from "styled-components";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-
-const MainContactWrapper = styled.section`
-	position: relative;
-	padding: 30px;
-	background-color: #f1f1f1;
-	border-radius: 10px;
-
-	.ico-btn {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-	}
-`;
+import { MainSection } from "./style";
 
 function MainContact() {
 	return (
-		<MainContactWrapper>
+		<MainSection>
 			<h2 className="main-text">CONTACT</h2>
 			<h3 className="main-text">Got a problem to solve?</h3>
 			<p className="title-description">
@@ -31,7 +18,7 @@ function MainContact() {
 			<button className="ico-btn">
 				<CallMadeIcon />
 			</button>
-		</MainContactWrapper>
+		</MainSection>
 	);
 }
 

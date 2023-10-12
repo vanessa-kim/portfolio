@@ -1,22 +1,9 @@
-import styled from "styled-components";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-
-const MainAboutWrapper = styled.section`
-	position: relative;
-	padding: 30px;
-	background-color: var(--section-bg);
-	border-radius: 10px;
-
-	.ico-btn {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-	}
-`;
+import { MainSection } from "./style";
 
 function MainAbout() {
 	return (
-		<MainAboutWrapper>
+		<MainSection>
 			<h2>ABOUT</h2>
 			<h3>UI Creator Vanessa Kim</h3>
 			<p>
@@ -27,7 +14,7 @@ function MainAbout() {
 			<button className="ico-btn">
 				<CallMadeIcon />
 			</button>
-		</MainAboutWrapper>
+		</MainSection>
 	);
 }
 

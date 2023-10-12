@@ -1,11 +1,9 @@
 import styled from "styled-components";
+import { MainSection } from "./style";
 
-const MainBannerWrapper = styled.section`
+const MainBannerWrapper = styled(MainSection)`
 	min-height: 36vh;
-	padding: 30px;
 	margin: 30px 30px 15px;
-	border-radius: 10px;
-	background-color: #f1f1f1;
 
 	h3 {
 		font-size: 81px;

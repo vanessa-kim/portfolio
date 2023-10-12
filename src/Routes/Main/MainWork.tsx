@@ -1,18 +1,8 @@
 import styled from "styled-components";
 import CallMadeIcon from "@mui/icons-material/CallMade";
+import { MainSection } from "./style";
 
-const MainWorkWrapper = styled.section`
-	position: relative;
-	padding: 30px;
-	background-color: #f1f1f1;
-	border-radius: 10px;
-
-	.ico-btn {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-	}
-
+const MainWorkWrapper = styled(MainSection)`
 	.main-work-pic {
 		height: calc(100% - 129px);
 		background-color: #ddd;

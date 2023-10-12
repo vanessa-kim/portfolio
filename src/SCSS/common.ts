@@ -23,6 +23,9 @@ const CommonStyle = createGlobalStyle`
 
     --header-bg: #ffffff77;
     --section-bg: #f1f1f1;
+
+    --z-index-main-section: 0;
+    --z-index-header: 1;  
   }
 
   h2 {
