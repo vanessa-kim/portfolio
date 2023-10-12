@@ -14,7 +14,7 @@ const MainWorkWrapper = styled.section`
 	}
 
 	.main-work-pic {
-		height: calc(100% - 130px);
+		height: calc(100% - 129px);
 		background-color: #ddd;
 		border-radius: 10px;
 		font-size: 0;
@@ -25,7 +25,7 @@ const MainWorkWrapper = styled.section`
 function MainWork() {
 	return (
 		<MainWorkWrapper>
-			<h2 className="main-text">Work</h2>
+			<h2 className="main-text">WORK</h2>
 			<h3 className="main-text">Dive into my playground</h3>
 			<p className="title-description">
 				2015부터 지금까지 지속된 작업물을 살펴보세요! 더 많은 작업물을 보고

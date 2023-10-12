@@ -17,7 +17,7 @@ const MainAboutWrapper = styled.section`
 function MainAbout() {
 	return (
 		<MainAboutWrapper>
-			<h2>About</h2>
+			<h2>ABOUT</h2>
 			<h3>UI Creator Vanessa Kim</h3>
 			<p>
 				저는 UI/UX 디자인, 퍼블리싱, 웹 프론트엔드 개발을 하는 바네사입니다.

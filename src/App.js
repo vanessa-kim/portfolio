@@ -11,6 +11,11 @@ import Work from "./Routes/Work";
 
 const ContentArea = styled.div`
 	padding-top: 60px;
+	box-sizing: border-box;
+
+	.content-area {
+		min-height: calc(100vh - 132px);
+	}
 `;
 
 function App() {
@@ -21,12 +26,14 @@ function App() {
 			<ContentArea>
 				<Router>
 					<Header />
-					<Routes>
-						<Route path="/" element={<Main />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/work" element={<Work />} />
-					</Routes>
+					<div className="content-area">
+						<Routes>
+							<Route path="/" element={<Main />} />
+							<Route path="/about" element={<About />} />
+							<Route path="/contact" element={<Contact />} />
+							<Route path="/work" element={<Work />} />
+						</Routes>
+					</div>
 					<Footer />
 				</Router>
 			</ContentArea>

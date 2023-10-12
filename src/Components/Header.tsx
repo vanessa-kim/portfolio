@@ -24,6 +24,7 @@ const HeaderWrapper = styled.header`
 			display: block;
 			padding: 20px 10px 20px 0;
 			cursor: pointer;
+			font-family: "Kumbh Sans", sans-serif;
 			font-weight: 700;
 
 			&:hover {
@@ -37,6 +38,8 @@ const HeaderWrapper = styled.header`
 
 		li {
 			a {
+				font-family: "Kumbh Sans", sans-serif;
+				font-weight: 300;
 				display: block;
 				padding: 20px 30px;
 				cursor: pointer;
@@ -60,6 +63,8 @@ const HeaderWrapper = styled.header`
 			border: none;
 			padding: 0;
 			background-color: transparent;
+			font-family: "Kumbh Sans", sans-serif;
+			font-weight: 500;
 
 			svg {
 				font-size: 20px;

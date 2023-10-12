@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const MainBannerWrapper = styled.section`
+	min-height: 36vh;
 	padding: 30px;
 	margin: 30px 30px 15px;
 	border-radius: 10px;
 	background-color: #f1f1f1;
 
 	h3 {
-		font-size: 80px;
-		letter-spacing: -0.5px;
+		font-size: 81px;
+		font-weight: 400;
 	}
 `;
 

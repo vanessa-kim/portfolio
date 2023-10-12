@@ -17,7 +17,7 @@ const MainContactWrapper = styled.section`
 function MainContact() {
 	return (
 		<MainContactWrapper>
-			<h2 className="main-text">Contact</h2>
+			<h2 className="main-text">CONTACT</h2>
 			<h3 className="main-text">Got a problem to solve?</h3>
 			<p className="title-description">
 				궁금한 점, 이야기 나눌 점이 있다면 편하게 문의 주세요. 답은 다소 느릴 수
