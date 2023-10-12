@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const MainAboutWrapper = styled.section`
 	border-top: 1px solid #ddd;
-	height: 100vh;
 	padding: 30px;
 `;
 
@@ -16,7 +15,7 @@ function MainAbout() {
 				저의 경험이 당신의 웹사이트와 웹 어플리케이션을 한단계 더 높은 단계로
 				끌어올릴 수 있도록 최선을 다할 것입니다. <br />
 			</p>
-			<button>Full-Frontend-Designer, 더보기 {`>`}</button>
+			<button>more about me {`>`}</button>
 		</MainAboutWrapper>
 	);
 }

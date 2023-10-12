@@ -1,5 +1,9 @@
-import { MainContactWrapper } from "./Style";
-import EmailForm from "../../Components/EmailForm";
+import styled from "styled-components";
+
+const MainContactWrapper = styled.section`
+	border-top: 1px solid #ddd;
+	padding: 30px;
+`;
 
 function MainContact() {
 	return (
@@ -14,7 +18,6 @@ function MainContact() {
 				<a href="mailto:yeran1225@gmail.com">yeran1225@gmail.com</a>으로
 				보내주세요.
 			</p>
-			<EmailForm />
 		</MainContactWrapper>
 	);
 }
