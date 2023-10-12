@@ -4,7 +4,7 @@ import CallMadeIcon from "@mui/icons-material/CallMade";
 const MainAboutWrapper = styled.section`
 	position: relative;
 	padding: 30px;
-	background-color: #f1f1f1;
+	background-color: var(--section-bg);
 	border-radius: 10px;
 
 	.ico-btn {

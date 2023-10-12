@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterWrapper = styled.footer`
 	height: 42px;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid var(--border);
 	padding: 10px 30px;
 	font-size: 12px;
 	text-align: center;

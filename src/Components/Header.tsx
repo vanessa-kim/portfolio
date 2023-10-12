@@ -11,11 +11,11 @@ const HeaderWrapper = styled.header`
 	display: flex;
 	height: 60px;
 	align-items: center;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid var(--border);
 	padding: 0 30px;
 	justify-content: space-between;
 	backdrop-filter: blur(10px);
-	background: #ffffff77;
+	background: var(--header-bg);
 
 	.header-group {
 		display: flex;
@@ -29,7 +29,7 @@ const HeaderWrapper = styled.header`
 			font-weight: 700;
 
 			&:hover {
-				color: #999;
+				color: var(--black-90);
 			}
 		}
 	}
@@ -47,7 +47,6 @@ const HeaderWrapper = styled.header`
 				display: block;
 				padding: 20px 30px;
 				cursor: pointer;
-				color: #555;
 
 				&:hover {
 					font-weight: 500;
