@@ -46,8 +46,10 @@ const CommonStyle = createGlobalStyle`
 
   h4 {
     font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
   }
 
   p {
