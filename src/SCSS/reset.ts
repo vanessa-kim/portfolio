@@ -52,16 +52,13 @@ const ResetStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  html {
-    overflow: auto;
-    overflow-x: hidden;
-  }
   body {
     font-weight: 300;
     font-family: 'Source Sans Pro', sans-serif;
     color: ${(props) => props.theme.black.darker};
     line-height: 1.2;
     background: ${(props) => props.theme.white.lighter};
+    overflow: auto;
   }
   a {
     text-decoration:none;
