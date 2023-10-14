@@ -79,6 +79,51 @@ const CommonStyle = createGlobalStyle`
       font-size: 20px;
     }
   }
+
+  
+  table {
+    max-width: 1000px;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  
+    th {
+      text-align: left;
+      height: 30px;
+      vertical-align: middle;
+      font-weight: 700;
+      font-size: 12px;
+      background-color: var(--section-bg);
+      padding: 10px;
+      &:first-child {
+        padding-left: 30px;
+      }
+    }
+  
+    td {
+      border-bottom: 1px solid var(--border);
+      height: 50px;
+      vertical-align: middle;
+      padding: 10px;
+      &:first-child {
+        padding-left: 30px;
+      }
+      &:last-child {
+        padding-right: 30px;
+      }
+    }
+  
+    .chip {
+      padding: 2px 10px 3px;
+      font-size: 9px;
+      background: var(--black);
+      color: var(--white);
+      border-radius: 20px;
+      line-height: 24px;
+    }
+  }
 `;
 
 export default CommonStyle;

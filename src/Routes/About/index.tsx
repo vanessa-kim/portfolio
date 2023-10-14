@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Experience from "./Experience";
+import Education from "./Education";
 
 const SkillList = styled.ul`
 	display: flex;
@@ -45,8 +46,6 @@ const SectionWrap = styled.section`
 		margin-bottom: 0;
 	}
 `;
-
-const EducationList = styled.ul``;
 
 function About() {
 	return (
@@ -149,18 +148,7 @@ function About() {
 
 			<SectionWrap>
 				<h3>Education</h3>
-				<EducationList>
-					<li>
-						TIS정보기술교육센터 HTML5와 JavaScript를 활용한 웹프론트엔드 개발
-						실무 과정
-					</li>
-					<li>
-						패스트캠퍼스 JavaScript 부트 캠프 9기 JavaScript ES6 문법과
-						프로그래밍
-					</li>
-					<li>이화여자대학교 시각디자인 학부 졸업</li>
-					<li>덕원예술고등학교 미술과 졸업</li>
-				</EducationList>
+				<Education />
 			</SectionWrap>
 		</AboutWrapper>
 	);
